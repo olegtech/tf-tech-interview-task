@@ -1,4 +1,4 @@
-import '../../style.scss';
+import '../../../../style.scss';
 
 const SECONDS_TO_TAKEOFF = 5;
 const MS_TO_TAKEOFF = SECONDS_TO_TAKEOFF * 1000;
@@ -12,7 +12,7 @@ const timeToPositionPercent = (startTime) => {
     return FINAL_POSITION_BOTTOM_VAL;
   }
 
-  return `calc(300px + ${((timeDiff / MS_TO_TAKEOFF) * 100).toFixed(0)}%)`;
+  return `calc(100px + ${((timeDiff / MS_TO_TAKEOFF) * 100).toFixed(0)}%)`;
 };
 
 const generateEmptyListEls = (quantity) =>

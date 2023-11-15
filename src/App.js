@@ -1,10 +1,8 @@
-import { Rocket } from './components/Rocket';
+import { LaunchPad } from './components/Rocket';
 import './style.scss';
 
 const App = () => (
-  <div className="launchpad">
-    <Rocket />
-  </div>
+  <LaunchPad />
 );
 
 export default App;

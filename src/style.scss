@@ -5,6 +5,16 @@ $darkgrey: #554842;
 $red: #f01a19;
 $darkred: #a75248;
 
+.launchpad {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(to bottom, #b4b2b2 0%, #b4b2b2 70%, #ffffff 100%);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 // Kudos to https://codepen.io/eva_trostlos for the amazing CSS rocket
 .rocket {
   position: absolute;

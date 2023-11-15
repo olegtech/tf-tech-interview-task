@@ -1,8 +1,14 @@
-import { useState } from 'react';
-import { RocketCore } from '../RocketCore';
+import React, { useState } from 'react';
+import { Rocket } from './components/Rocket';
 
-export const Rocket = () => {
-  const [initialLaunchTime] = useState(Date.now());
+export const LaunchPad = () => {
+  const [rerenderCount, triggerRerender] = useState(0);
 
-  return <RocketCore initialLaunchTime={initialLaunchTime} />;
-};
+  setTimeout(() => { triggerRerender(rerenderCount + 1); }, 500);
+
+  return (
+    <div className="launchpad">
+      <Rocket />
+    </div>
+  );
+}
